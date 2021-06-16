@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	int ar1[]={1,2,3,4,5};
+	int i;
+    int	k=2;
+    int n = ar1.length;
+	for( i=0;i<n;i++)
+	{
+	    ar1[i]=ar1[i + k% n];
+	}
+	for(int j= 0;j<n; j++)
+	{
+	    System.out.println(ar1[j]);
+	}
+	}
+	
+}

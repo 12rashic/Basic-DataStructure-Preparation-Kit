@@ -1,0 +1,59 @@
+import java.util.*;
+
+
+
+public class Main
+{
+	
+public static void main(String[] args) {
+
+		int a=1 ,b=1;
+		
+//int n= 10;
+		
+Scanner sc = new Scanner(System.in);
+		
+System.out.println("\n\t Enter no of series");
+		
+int n= sc.nextInt();
+		
+int ar[]=new int[n];
+		
+System.out.print(a + " " + b);
+		
+for(int i=1;i<n;i++)
+		
+{
+		    
+if(i%2==0)
+		    
+{
+		       
+ ar[i]=b*3;
+		       
+ b=ar[i];
+		   
+ }
+
+else{
+	
+ar[i]=a*2;
+		        
+a=ar[i];
+		    
+}
+		
+}
+		
+for(int j = 1;j<n;j++)
+		
+{
+		    
+System.out.print(" " + ar[j]);
+		
+}
+	
+}
+}
+
+Output -> 1,1,2,3,4,9,8,27,16,18

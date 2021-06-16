@@ -1,0 +1,40 @@
+static int[] matchingStrings(String[] strings, String[] queries) 
+    {
+        int a[]=new int[queries.length-1];
+        int c=0;
+        Map<String , Integer> map = new HashMap<>();
+        for(int x=0;x<strings.length-1;x++)
+{
+    String inputstring=strings[x];
+    if(map.containsKey(inputstring))
+    {
+    map.put(inputstring , map.get(inputstring) + 1);
+    }
+    else
+    {
+        map.put(inputstring , 1);   
+    }
+    for(int y =0;y<queries.length-1;y++)
+    {
+        String qstring=queries[y];
+        if(map.containsKey(qstring))
+        {
+            a[y]=map.get(qstring);
+        }
+        else 
+        if(!map.containsKey(qstring))
+            {
+            a[y]=1;
+            }
+            else
+            {
+                
+                a[y]=0;
+            }
+        }
+       
+    }
+}
+    return a;
+
+    }

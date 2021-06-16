@@ -1,0 +1,55 @@
+if(head1==null)
+    {
+        return head2;
+    }
+     if(head2==null)
+    {
+        return head1;
+    }
+    SinglyLinkedListNode head3=null;
+    SinglyLinkedListNode cur=head3;
+
+//SinglyLinkedListNode cur= head;
+if(head1.data>head2.data)
+{
+    cur= head2;
+    head2=head2.next;
+}
+else
+{
+    cur = head1;
+    head1=head1.next;
+}
+while(head1!=null && head2!=null)
+{
+    if(head1.data<head2.data)
+    {
+    cur=head1;
+    head1=head1.next;
+    }
+    
+    cur=head2;
+    head2=head2.next;
+    
+}
+if(head1==null)
+{
+    cur= head2;
+}
+if(head2==null)
+{
+    cur= head1;
+}
+return head3;
+--------------------------------------------------------------------------------------
+SinglyLinkedListNode q= head;
+        SinglyLinkedListNode newnd = new SinglyLinkedListNode(data);
+        while(q.data!=position || q.next!=null)
+        {
+            q=q.next;
+        }
+        newnd.next = q.next;
+        q.next=newnd;
+
+
+return head;
