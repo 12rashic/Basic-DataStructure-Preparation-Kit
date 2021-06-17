@@ -1,5 +1,4 @@
 # Basic-DataStructure-Preparation-Kit
-![alt text](C:/Users/lenovo/Desktop/1.png)
 
 ▪️----Table Of Contents--- ▪️
 (⬜ Contains all set of programming question on topics listed below along with a few from hackerrrank platform ⬜)
